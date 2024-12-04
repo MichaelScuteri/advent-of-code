@@ -1,4 +1,4 @@
-file = open('day1/day1input.txt', 'r')
+file = open('day1/day1.txt', 'r')
 content = file.read()
 lists = content.splitlines()
 

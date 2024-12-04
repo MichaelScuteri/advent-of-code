@@ -1,4 +1,4 @@
-file = open('day1/day1input.txt', 'r')
+file = open('day1/day1.txt', 'r')
 content = file.read()
 lists = content.splitlines()
 
@@ -10,10 +10,15 @@ for line in lists:
     list1.append(int(left))
     list2.append(int(right))
 
+duplicates = []
+
 for num in list1:
-    #need to create a dictionary to store the count and also the number counted 
     total = list2.count(num)
-    print(total)
+    if total != 0:
+        total *= num
+        duplicates.append(total)
+
+print(sum(duplicates))
 
 
 
