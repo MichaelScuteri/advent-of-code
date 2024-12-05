@@ -1,11 +1,11 @@
 file = open('day1/day1.txt', 'r')
 content = file.read()
-lists = content.splitlines()
+lines = content.splitlines()
 
 list1 = []
 list2 = []
 
-for line in lists:
+for line in lines:
     left, right = line.split()
     list1.append(int(left))
     list2.append(int(right))
