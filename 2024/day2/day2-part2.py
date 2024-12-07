@@ -1,5 +1,4 @@
-file = open('day2.txt', 'r')
-content = file.read()
+with open('day2.txt', 'r') as file: content = file.read()
 lists = content.splitlines()
 
 safe = []
